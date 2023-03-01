@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
 import { getAddress } from "@ethersproject/address";
+import nobleswapGIL from "./tokens/nobleswap-gil.json";
 import pancakeswapDefault from "./tokens/pancakeswap-default.json";
 import pancakeswapExtended from "./tokens/pancakeswap-extended.json";
 import pancakeswapTop100 from "./tokens/pancakeswap-top-100.json";
@@ -11,6 +12,7 @@ import pancakeswapMini from "./tokens/pancakeswap-mini.json";
 import pancakeswapMiniExtended from "./tokens/pancakeswap-mini-extended.json";
 
 const lists = {
+  "nobleswap-gil": nobleswapGIL,
   "pancakeswap-default": pancakeswapDefault,
   "pancakeswap-extended": pancakeswapExtended,
   "pancakeswap-top-100": pancakeswapTop100,
