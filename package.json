@@ -7,6 +7,9 @@
   "private": true,
   "scripts": {
     "build": "rm -rf ./dist && rollup -c",
+    "checksum:noble-gil": "yarn build && node ./dist checksum nobleswap-gil",
+    "generate:noble-gil": "yarn test --list=nobleswap-gil && yarn build && node ./dist generate nobleswap-gil",
+    "makelist:noble-gil": "yarn checksum:nobleswap-gil && yarn generate:nobleswap-gil",
     "generate:pcs-aptos": "yarn build && node ./dist generate pancakeswap-aptos",
     "makelist:pcs-aptos": "yarn test --list=pancakeswap-aptos && yarn generate:pcs-aptos",
     "checksum:pcs-default": "yarn build && node ./dist checksum pancakeswap-default",
@@ -34,7 +37,6 @@
     "generate:pcs-mini-extended": "yarn test --list=pancakeswap-mini-extended && yarn build && node ./dist generate pancakeswap-mini-extended",
     "makelist:pcs-mini-extended": "yarn checksum:pcs-mini-extended && yarn generate:pcs-mini-extended",
     "from-addresses:pcs-mini-extended": "yarn build && node ./dist get-list-from-addresses",
-    "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
     "fetch:pcs-top-100": "yarn build && node ./dist fetch pcs-top-100",
     "fetch:coingecko": "yarn build && node ./dist fetch coingecko",
     "fetch:cmc": "yarn build && node ./dist fetch cmc",

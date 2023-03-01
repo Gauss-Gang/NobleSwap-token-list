@@ -4,6 +4,7 @@ import fs from "fs";
 import path from "path";
 import { getAddress } from "@ethersproject/address";
 import pancakeswapSchema from "@pancakeswap/token-lists/schema/pancakeswap.json";
+import currentNobleswapGILList from "../lists/nobleswap-gil.json";
 import currentPancakeswapDefaultList from "../lists/pancakeswap-default.json";
 import currentPancakeswapExtendedtList from "../lists/pancakeswap-extended.json";
 import currentPancakeswapTop15List from "../lists/pancakeswap-top-15.json";
@@ -23,6 +24,7 @@ const listArgs = process.argv
   .pop();
 
 const CASES = [
+  ["nobleswap-gil"],
   ["pancakeswap-default"],
   ["pancakeswap-extended"],
   ["pancakeswap-top-100"],
@@ -37,6 +39,7 @@ const CASES = [
 const cases = listArgs ? CASES.filter((c) => c[0] === listArgs) : CASES;
 
 const currentLists = {
+  "nobleswap-gil": currentNobleswapGILList,
   "pancakeswap-default": currentPancakeswapDefaultList,
   "pancakeswap-extended": currentPancakeswapExtendedtList,
   "pancakeswap-top-100": currentPancakeswapTop100tList,

@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
 import { TokenList } from "@pancakeswap/token-lists";
+import { version as nobleswapGILVersion } from "../lists/nobleswap-gil.json";
 import { version as pancakeswapDefaultVersion } from "../lists/pancakeswap-default.json";
 import { version as pancakeswapExtendedVersion } from "../lists/pancakeswap-extended.json";
 import { version as pancakeswapTop15Version } from "../lists/pancakeswap-top-15.json";
@@ -10,6 +11,7 @@ import { version as coingeckoVersion } from "../lists/coingecko.json";
 import { version as cmcVersion } from "../lists/cmc.json";
 import { version as pancakeswapMiniVersion } from "../lists/pancakeswap-mini.json";
 import { version as pancakeswapMiniExtendedVersion } from "../lists/pancakeswap-mini-extended.json";
+import nobleswapGIL from "./tokens/nobleswap-gil.json";
 import pancakeswapAptos from "./tokens/pancakeswap-aptos.json";
 import pancakeswapDefault from "./tokens/pancakeswap-default.json";
 import pancakeswapExtended from "./tokens/pancakeswap-extended.json";
@@ -33,6 +35,14 @@ type Version = {
 };
 
 const lists = {
+  "nobleswap-gil": {
+    list: nobleswapGIL,
+    name: "NobleSwap GIL",
+    keywords: ["nobleswap", "gil"],
+    logoURI: "https://nobleswap.io/logo.png",
+    sort: false,
+    currentVersion: nobleswapGILVersion,
+  },
   "pancakeswap-aptos": {
     list: pancakeswapAptos,
     name: "PancakeSwap Aptos",
