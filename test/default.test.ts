@@ -5,15 +5,10 @@ import path from "path";
 import { getAddress } from "@ethersproject/address";
 import pancakeswapSchema from "@pancakeswap/token-lists/schema/pancakeswap.json";
 import currentNobleswapGILList from "../lists/nobleswap-gil.json";
-import currentPancakeswapDefaultList from "../lists/pancakeswap-default.json";
-import currentPancakeswapExtendedtList from "../lists/pancakeswap-extended.json";
-import currentPancakeswapTop15List from "../lists/pancakeswap-top-15.json";
-import currentPancakeswapTop100tList from "../lists/pancakeswap-top-100.json";
+import currentNobleswapGILTop15List from "../lists/nobleswap-gil-top-15.json";
+import currentNobleswapGILTop100tList from "../lists/nobleswap-gil-top-100.json";
 import currentCoingeckoList from "../lists/coingecko.json";
 import currentCmcList from "../lists/cmc.json";
-import currentPancakeswapMiniList from "../lists/pancakeswap-mini.json";
-import currentPancakeswapMiniExtendedList from "../lists/pancakeswap-mini-extended.json";
-import currentPancakeswapAptosList from "../lists/pancakeswap-aptos.json";
 import { buildList, VersionBump } from "../src/buildList";
 import getTokenChainData from "../src/utils/getTokensChainData";
 import { getAptosCoinsChainData } from "../src/utils/getAptosCoinChainData";
@@ -25,30 +20,20 @@ const listArgs = process.argv
 
 const CASES = [
   ["nobleswap-gil"],
-  ["pancakeswap-default"],
-  ["pancakeswap-extended"],
-  ["pancakeswap-top-100"],
-  ["pancakeswap-top-15"],
+  ["nobleswap-gil-top-100"],
+  ["nobleswap-gil-top-15"],
   ["coingecko", { skipLogo: true, aptos: false }],
   ["cmc", { skipLogo: true, aptos: false }],
-  ["pancakeswap-mini"],
-  ["pancakeswap-mini-extended"],
-  ["pancakeswap-aptos", { skipLogo: true, aptos: true }],
 ] as const;
 
 const cases = listArgs ? CASES.filter((c) => c[0] === listArgs) : CASES;
 
 const currentLists = {
   "nobleswap-gil": currentNobleswapGILList,
-  "pancakeswap-default": currentPancakeswapDefaultList,
-  "pancakeswap-extended": currentPancakeswapExtendedtList,
-  "pancakeswap-top-100": currentPancakeswapTop100tList,
-  "pancakeswap-top-15": currentPancakeswapTop15List,
+  "nobleswap-gil-top-100": currentNobleswapGILTop100tList,
+  "nobleswap-gil-top-15": currentNobleswapGILTop15List,
   coingecko: currentCoingeckoList,
   cmc: currentCmcList,
-  "pancakeswap-mini": currentPancakeswapMiniList,
-  "pancakeswap-mini-extended": currentPancakeswapMiniExtendedList,
-  "pancakeswap-aptos": currentPancakeswapAptosList,
 };
 
 const APTOS_COIN_ALIAS = {
@@ -219,25 +204,14 @@ describe.each(cases)("buildList %s", (listName, opt = undefined) => {
 
   it("all tokens have correct decimals", async () => {
     const addressArray = defaultTokenList.tokens.map((token) => token.address);
-    if (opt?.aptos === true) {
-      const coinsData = await getAptosCoinsChainData(addressArray);
-      for (const token of defaultTokenList.tokens) {
-        const coinData = coinsData.find((t) => t.address === token.address);
-        expect(token.decimals).toBeGreaterThanOrEqual(0);
-        expect(token.decimals).toBeLessThanOrEqual(30); // should be much more less
-        expect(token.decimals).toEqual(coinData?.decimals);
-        expect(APTOS_COIN_ALIAS[token.symbol] || token.symbol).toEqual(coinData?.symbol);
-      }
-    } else {
-      const tokensChainData = await getTokenChainData("test", addressArray);
-      for (const token of defaultTokenList.tokens) {
-        const realDecimals = tokensChainData.find(
-          (t) => t.address.toLowerCase() === token.address.toLowerCase()
-        )?.decimals;
-        expect(token.decimals).toBeGreaterThanOrEqual(0);
-        expect(token.decimals).toBeLessThanOrEqual(255);
-        expect(token.decimals).toEqual(realDecimals);
-      }
+    const tokensChainData = await getTokenChainData("test", addressArray);
+    for (const token of defaultTokenList.tokens) {
+      const realDecimals = tokensChainData.find(
+        (t) => t.address.toLowerCase() === token.address.toLowerCase()
+      )?.decimals;
+      expect(token.decimals).toBeGreaterThanOrEqual(0);
+      expect(token.decimals).toBeLessThanOrEqual(255);
+      expect(token.decimals).toEqual(realDecimals);
     }
   });
 
