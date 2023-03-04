@@ -6,7 +6,8 @@
     "skipLibCheck": true,
     "target": "ES5",
     "esModuleInterop": true,
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
+    "moduleResolution": "node"
   },
   "include": ["src/**/*.ts"],
   "exclude": ["src/**/*.test.ts", "**/__mocks__/*", "src/mocks/**", "jest.setup.js"]
