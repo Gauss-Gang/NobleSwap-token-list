@@ -2,25 +2,17 @@ import fs from "fs";
 import path from "path";
 import { getAddress } from "@ethersproject/address";
 import nobleswapGIL from "./tokens/nobleswap-gil.json";
-import pancakeswapDefault from "./tokens/pancakeswap-default.json";
-import pancakeswapExtended from "./tokens/pancakeswap-extended.json";
-import pancakeswapTop100 from "./tokens/pancakeswap-top-100.json";
-import pancakeswapTop15 from "./tokens/pancakeswap-top-15.json";
+import nobleswapGILTop100 from "./tokens/nobleswap-gil-top-100.json";
+import nobleswapGILTop15 from "./tokens/nobleswap-gil-top-15.json";
 import coingecko from "./tokens/coingecko.json";
 import cmc from "./tokens/cmc.json";
-import pancakeswapMini from "./tokens/pancakeswap-mini.json";
-import pancakeswapMiniExtended from "./tokens/pancakeswap-mini-extended.json";
 
 const lists = {
   "nobleswap-gil": nobleswapGIL,
-  "pancakeswap-default": pancakeswapDefault,
-  "pancakeswap-extended": pancakeswapExtended,
-  "pancakeswap-top-100": pancakeswapTop100,
-  "pancakeswap-top-15": pancakeswapTop15,
+  "nobleswap-gil-top-100": nobleswapGILTop100,
+  "nobleswap-gil-top-15": nobleswapGILTop15,
   coingecko,
   cmc,
-  "pancakeswap-mini": pancakeswapMini,
-  "pancakeswap-mini-extended": pancakeswapMiniExtended,
 };
 
 const checksumAddresses = (listName: string): void => {

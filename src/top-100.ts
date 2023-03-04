@@ -110,10 +110,10 @@ const getTokens = async (): Promise<BitqueryEntity[]> => {
 const getTokenLogo = (address: string): string => {
   // Note: fs.existsSync can't be used here because its not case sensetive
   if (logoFiles.includes(`${address}.png`)) {
-    return `https://tokens.pancakeswap.finance/images/${address}.png`;
+    return "https://nobleswap.io/logo.png";  // original form `https://tokens.pancakeswap.finance/images/${address}.png`
   }
 
-  return `https://assets-cdn.trustwallet.com/blockchains/smartchain/assets/${address}/logo.png`;
+  return "https://nobleswap.io/logo.png"; // original form `https://assets.trustwallet.com/blockchains/smartchain/assets/${address}/logo.png`
 };
 
 /**
@@ -144,7 +144,7 @@ const main = async (): Promise<void> => {
       return [...list, updatedToken];
     }, []);
 
-    const tokenListPath = `${path.resolve()}/src/tokens/pancakeswap-top-100.json`;
+    const tokenListPath = `${path.resolve()}/src/tokens/nobleswap-gil-top-100.json`;
     console.info("Saving updated list to ", tokenListPath);
     const stringifiedList = JSON.stringify(sanitizedTokens, null, 2);
     fs.writeFileSync(tokenListPath, stringifiedList);
