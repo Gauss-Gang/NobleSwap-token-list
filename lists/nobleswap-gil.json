@@ -1,10 +1,10 @@
 {
   "name": "NobleSwap GIL",
-  "timestamp": "2023-03-04T09:43:35.222Z",
+  "timestamp": "2023-03-04T11:46:55.617Z",
   "version": {
     "major": 1,
     "minor": 0,
-    "patch": 9
+    "patch": 11
   },
   "logoURI": "https://nobleswap.io/logo.png",
   "keywords": [
