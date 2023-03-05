@@ -1,10 +1,10 @@
 {
   "https://tokenlist.nobleswap.io/nobleswap-gil.json": {
-    "name": "NobleSwap GIL Default",
+    "name": "NobleSwap GIL",
     "homepage": "https://nobleswap.io"
   },
   "https://tokenlist.nobleswap.io/nobleswap-gil-top-15.json": {
-    "name": "NobleSwap GIL Extended",
+    "name": "NobleSwap GIL Top 15",
     "homepage": "https://nobleswap.io"
     
   },
