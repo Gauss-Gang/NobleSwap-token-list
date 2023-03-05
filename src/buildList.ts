@@ -1,6 +1,5 @@
 import fs from "fs";
 import path from "path";
-import { TokenList } from "@pancakeswap/token-lists";
 import { version as nobleswapGILVersion } from "../lists/nobleswap-gil.json";
 import { version as nobleswapGILTop15Version } from "../lists/nobleswap-gil-top-15.json";
 import { version as nobleswapGILTop100Version } from "../lists/nobleswap-gil-top-100.json";
@@ -81,7 +80,7 @@ const getNextVersion = (currentVersion: Version, versionBump?: VersionBump) => {
   }
 };
 
-export const buildList = (listName: string, versionBump?: VersionBump): TokenList => {
+export const buildList = (listName: string, versionBump?: VersionBump) => {
   const { list, name, keywords, logoURI, sort, currentVersion, schema } = lists[listName];
   const version = getNextVersion(currentVersion, versionBump);
   return {
@@ -108,7 +107,7 @@ export const buildList = (listName: string, versionBump?: VersionBump): TokenLis
   };
 };
 
-export const saveList = (tokenList: TokenList, listName: string): void => {
+export const saveList = (tokenList, listName: string): void => {
   const tokenListPath = `${path.resolve()}/lists/${listName}.json`;
   const stringifiedList = JSON.stringify(tokenList, null, 2);
   fs.writeFileSync(tokenListPath, stringifiedList);

@@ -1,16 +1,16 @@
 {
-  "https://tokens.pancakeswap.finance/pancakeswap-default.json": {
-    "name": "PancakeSwap Default",
-    "homepage": "https://pancakeswap.finance"
+  "https://tokenlist.nobleswap.io/nobleswap-gil.json": {
+    "name": "NobleSwap GIL Default",
+    "homepage": "https://nobleswap.io"
   },
-  "https://tokens.pancakeswap.finance/pancakeswap-extended.json": {
-    "name": "PancakeSwap Extended",
-    "homepage": "https://pancakeswap.finance"
+  "https://tokenlist.nobleswap.io/nobleswap-gil-top-15.json": {
+    "name": "NobleSwap GIL Extended",
+    "homepage": "https://nobleswap.io"
     
   },
-  "https://tokens.pancakeswap.finance/pancakeswap-top-100.json": {
-    "name": "PancakeSwap Top 100",
-    "homepage": "https://pancakeswap.finance"
+  "https://tokenlist.nobleswap.io/nobleswap-gil-top-100.json": {
+    "name": "NobleSwap GIL Top 100",
+    "homepage": "https://nobleswap.io"
     
   },
   "https://tokens.coingecko.com/binance-smart-chain/all.json": {
