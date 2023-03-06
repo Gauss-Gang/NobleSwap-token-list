@@ -96,8 +96,8 @@ export const buildList = (listName: string, versionBump?: VersionBump) => {
       ? list.sort((t1, t2) => {
           if (t1.chainId === t2.chainId) {
             // CAKE first in extended list
-            if ((t1.symbol === "CAKE") !== (t2.symbol === "CAKE")) {
-              return t1.symbol === "CAKE" ? -1 : 1;
+            if ((t1.symbol === "NOBLE") !== (t2.symbol === "NOBLE")) { /// Replaced CAKE with NOBLE
+              return t1.symbol === "NOBLE" ? -1 : 1;
             }
             return t1.symbol.toLowerCase() < t2.symbol.toLowerCase() ? -1 : 1;
           }

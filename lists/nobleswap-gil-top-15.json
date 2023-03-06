@@ -1,10 +1,10 @@
 {
   "name": "NobleSwap GIL Top 15",
-  "timestamp": "2023-03-05T20:13:57.004Z",
+  "timestamp": "2023-03-06T11:37:46.561Z",
   "version": {
     "major": 1,
     "minor": 0,
-    "patch": 13
+    "patch": 17
   },
   "logoURI": "https://nobleswap.io/logo.png",
   "keywords": [
@@ -13,6 +13,14 @@
     "top 15"
   ],
   "tokens": [
+    {
+      "name": "NobleSwap Token",
+      "symbol": "NOBLE",
+      "address": "0x104F407547D79ff7855e0A81Fd1618917a5e6EFc",
+      "chainId": 4242,
+      "decimals": 18,
+      "logoURI": "https://nobleswap.io/logo.png"
+    },
     {
       "name": "Bear Token",
       "symbol": "BEAR",
@@ -89,14 +97,6 @@
       "name": "Meerkat Token",
       "symbol": "MEERKAT",
       "address": "0x1905f3bb531035F0AB29ff4B9a0e8cF00C908DCF",
-      "chainId": 4242,
-      "decimals": 18,
-      "logoURI": "https://nobleswap.io/logo.png"
-    },
-    {
-      "name": "NobleSwap Token",
-      "symbol": "NOBLE",
-      "address": "0x104F407547D79ff7855e0A81Fd1618917a5e6EFc",
       "chainId": 4242,
       "decimals": 18,
       "logoURI": "https://nobleswap.io/logo.png"
