@@ -6,11 +6,13 @@
   "https://tokenlist.nobleswap.io/nobleswap-gil-top-15.json": {
     "name": "NobleSwap GIL Top 15",
     "homepage": "https://nobleswap.io"
-    
   },
   "https://tokenlist.nobleswap.io/nobleswap-gil-top-100.json": {
     "name": "NobleSwap GIL Top 100",
     "homepage": "https://nobleswap.io"
-    
+  },
+  "https://tokens.coingecko.com/binance-smart-chain/all.json": {
+    "name": "CoinGecko",
+    "homepage": "https://www.coingecko.com"
   }
 }
