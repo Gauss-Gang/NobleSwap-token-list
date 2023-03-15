@@ -7,11 +7,11 @@ import pancakeswapSchema from "@pancakeswap/token-lists/schema/pancakeswap.json"
 import currentNobleswapGILList from "../lists/nobleswap-gil.json";
 import currentNobleswapGILTop15List from "../lists/nobleswap-gil-top-15.json";
 import currentNobleswapGILTop100tList from "../lists/nobleswap-gil-top-100.json";
-import currentCoingeckoList from "../lists/coingecko.json";
-import currentCmcList from "../lists/cmc.json";
 import { buildList, VersionBump } from "../src/buildList";
 import getTokenChainData from "../src/utils/getTokensChainData";
-import { getAptosCoinsChainData } from "../src/utils/getAptosCoinChainData";
+// import { getAptosCoinsChainData } from "../src/utils/getAptosCoinChainData";
+// import currentCoingeckoList from "../lists/coingecko.json";
+// import currentCmcList from "../lists/cmc.json";
 
 const listArgs = process.argv
   ?.find((arg) => arg.includes("--list="))
@@ -22,8 +22,8 @@ const CASES = [
   ["nobleswap-gil"],
   ["nobleswap-gil-top-100"],
   ["nobleswap-gil-top-15"],
-  ["coingecko", { skipLogo: true, aptos: false }],
-  ["cmc", { skipLogo: true, aptos: false }],
+  // ["coingecko", { skipLogo: true, aptos: false }],
+  // ["cmc", { skipLogo: true, aptos: false }],
 ] as const;
 
 const cases = listArgs ? CASES.filter((c) => c[0] === listArgs) : CASES;
@@ -32,8 +32,8 @@ const currentLists = {
   "nobleswap-gil": currentNobleswapGILList,
   "nobleswap-gil-top-100": currentNobleswapGILTop100tList,
   "nobleswap-gil-top-15": currentNobleswapGILTop15List,
-  coingecko: currentCoingeckoList,
-  cmc: currentCmcList,
+  // coingecko: currentCoingeckoList,
+  // cmc: currentCmcList,
 };
 
 const APTOS_COIN_ALIAS = {
@@ -178,28 +178,22 @@ describe.each(cases)("buildList %s", (listName, opt = undefined) => {
   });
 
   it("all addresses are valid and checksummed", () => {
-    if (!opt || !opt.aptos) {
-      for (const token of defaultTokenList.tokens) {
-        expect(token.address).toBe(getAddress(token.address));
-      }
-    }
+    for (const token of defaultTokenList.tokens) {
+      expect(token.address).toBe(getAddress(token.address));
+    }  
   });
 
   it("all logos addresses are valid and checksummed", async () => {
-    if (!opt || !opt.skipLogo) {
-      for (const logo of logoFiles) {
-        const sanitizedLogo = logo.name.split(".")[0];
-        expect(sanitizedLogo).toBe(getAddress(sanitizedLogo));
-      }
+    for (const logo of logoFiles) {
+      const sanitizedLogo = logo.name.split(".")[0];
+      expect(sanitizedLogo).toBe(getAddress(sanitizedLogo));
     }
   });
 
   it("all tokens have correct logos", () => {
-    if (!opt || !opt.skipLogo) {
-      for (const token of defaultTokenList.tokens) {
-        expect(token).toBeValidLogo();
-      }
-    }
+    for (const token of defaultTokenList.tokens) {
+      expect(token).toBeValidLogo();
+    }  
   });
 
   it("all tokens have correct decimals", async () => {

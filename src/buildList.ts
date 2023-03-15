@@ -1,6 +1,5 @@
 import fs from "fs";
 import path from "path";
-import { TokenList } from "@pancakeswap/token-lists";
 import { version as nobleswapGILVersion } from "../lists/nobleswap-gil.json";
 import { version as nobleswapGILTop15Version } from "../lists/nobleswap-gil-top-15.json";
 import { version as nobleswapGILTop100Version } from "../lists/nobleswap-gil-top-100.json";
@@ -81,7 +80,7 @@ const getNextVersion = (currentVersion: Version, versionBump?: VersionBump) => {
   }
 };
 
-export const buildList = (listName: string, versionBump?: VersionBump): TokenList => {
+export const buildList = (listName: string, versionBump?: VersionBump) => {
   const { list, name, keywords, logoURI, sort, currentVersion, schema } = lists[listName];
   const version = getNextVersion(currentVersion, versionBump);
   return {
@@ -97,8 +96,8 @@ export const buildList = (listName: string, versionBump?: VersionBump): TokenLis
       ? list.sort((t1, t2) => {
           if (t1.chainId === t2.chainId) {
             // CAKE first in extended list
-            if ((t1.symbol === "CAKE") !== (t2.symbol === "CAKE")) {
-              return t1.symbol === "CAKE" ? -1 : 1;
+            if ((t1.symbol === "NOBLE") !== (t2.symbol === "NOBLE")) { /// Replaced CAKE with NOBLE
+              return t1.symbol === "NOBLE" ? -1 : 1;
             }
             return t1.symbol.toLowerCase() < t2.symbol.toLowerCase() ? -1 : 1;
           }
@@ -108,7 +107,7 @@ export const buildList = (listName: string, versionBump?: VersionBump): TokenLis
   };
 };
 
-export const saveList = (tokenList: TokenList, listName: string): void => {
+export const saveList = (tokenList, listName: string): void => {
   const tokenListPath = `${path.resolve()}/lists/${listName}.json`;
   const stringifiedList = JSON.stringify(tokenList, null, 2);
   fs.writeFileSync(tokenListPath, stringifiedList);
