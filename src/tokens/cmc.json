@@ -15882,7 +15882,7 @@
   {
     "name": "BabyBUSD",
     "symbol": "BabyBUSD",
-    "address": "0xA22DC6BabAb39C2D83F0d4b174ef7016424253a7",
+    "address": "0xA22DC6BabAb39C2D83F0d4b174ef7016145253a7",
     "chainId": 56,
     "decimals": 18,
     "logoURI": "https://s2.coinmarketcap.com/static/img/coins/64x64/11008.png"

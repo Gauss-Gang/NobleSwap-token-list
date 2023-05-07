@@ -23,7 +23,7 @@
     "generate:cmc": "yarn test --list=cmc && yarn build && node ./dist generate cmc",
     "makelist:cmc": "yarn checksum:cmc && yarn generate:cmc",
     "from-addresses:noble-gil-mini-extended": "yarn build && node ./dist get-list-from-addresses",
-    "fetch:noble-gil-top-100": "yarn build && node ./dist fetch noble-gil-top-100",
+    "fetch:noble-gil-top-100": "yarn build && node ./dist fetch nobleswap-gil-top-100",
     "fetch:coingecko": "yarn build && node ./dist fetch coingecko",
     "fetch:cmc": "yarn build && node ./dist fetch cmc",
     "test": "jest",
