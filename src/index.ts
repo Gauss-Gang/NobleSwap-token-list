@@ -17,7 +17,7 @@ switch (command) {
     saveList(buildList(listName, versionBump as VersionBump), listName);
     break;
   case "fetch":
-    if (listName === "noble-gil-top-100") { /// change to 'nobleswap-gil-top-100' or 'noble-gil-top-100'
+    if (listName === "nobleswap-gil-top-100") { /// change to 'nobleswap-gil-top-100' or 'noble-gil-top-100'
       topTokens();
     }
     fetchThirdPartyList(listName);

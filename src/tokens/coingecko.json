@@ -2389,7 +2389,7 @@
     "address": "0xFC563895C1D5BB779685fB3d2ec09f5Fa5B6473c",
     "chainId": 56,
     "decimals": 9,
-    "logoURI": "https://assets.coingecko.com/coins/images/22705/thumb/g49IDMK.png?1642423668"
+    "logoURI": "https://assets.coingecko.com/coins/images/22705/thumb/g49IDMK.png?1614523668"
   },
   {
     "name": "MultiPad",
@@ -22870,7 +22870,7 @@
     "address": "0x6a4368C8358488c0ab37F561Fcb16AB751917201",
     "chainId": 56,
     "decimals": 9,
-    "logoURI": "https://assets.coingecko.com/coins/images/20037/thumb/binom-logo-200px.png?1636424202"
+    "logoURI": "https://assets.coingecko.com/coins/images/20037/thumb/binom-logo-200px.png?1636145202"
   },
   {
     "name": "Sabac Warrior",
@@ -24243,7 +24243,7 @@
   {
     "name": "BabyBUSD",
     "symbol": "BabyBUSD",
-    "address": "0xA22DC6BabAb39C2D83F0d4b174ef7016424253a7",
+    "address": "0xA22DC6BabAb39C2D83F0d4b174ef7016145253a7",
     "chainId": 56,
     "decimals": 18,
     "logoURI": "https://assets.coingecko.com/coins/images/17370/thumb/babybusd.PNG?1627439151"
@@ -26716,7 +26716,7 @@
     "address": "0x213Fd3C787b6c452F50Fd91f14e12Ddf04A7aB4A",
     "chainId": 56,
     "decimals": 18,
-    "logoURI": "https://assets.coingecko.com/coins/images/22589/thumb/LUl0lEMr_400x400.jpg?1642144242"
+    "logoURI": "https://assets.coingecko.com/coins/images/22589/thumb/LUl0lEMr_400x400.jpg?1642141452"
   },
   {
     "name": "Ownly",
