@@ -8,6 +8,14 @@
         "logoURI": "https://nobleswap.io/logo.png"
     },
     {
+        "name": "NobleSwap Token",
+        "symbol": "NOBLE",
+        "address": "0xB6A8f6c2bDF123Fd2801561008fe838Ca60133af",
+        "chainId": 4242,
+        "decimals": 18,
+        "logoURI": "https://nobleswap.io/logo.png"
+    },
+    {
         "name": "Ferret Token",
         "symbol": "FERRET",
         "address": "0x0C9C5Ab0Bd51e703CFC5529A4F88174DD77CE073",

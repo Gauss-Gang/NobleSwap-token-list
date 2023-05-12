@@ -1,10 +1,10 @@
 {
   "name": "NobleSwap GIL Top 100",
-  "timestamp": "2023-05-07T20:29:19.455Z",
+  "timestamp": "2023-05-12T10:53:59.198Z",
   "version": {
     "major": 1,
     "minor": 0,
-    "patch": 19
+    "patch": 20
   },
   "logoURI": "https://nobleswap.io/logo.png",
   "keywords": [
@@ -58,6 +58,14 @@
       "symbol": "wGANG",
       "address": "0x624814Bca9A5d5620E350264f839b93f766B60a2",
       "chainId": 1452,
+      "decimals": 18,
+      "logoURI": "https://nobleswap.io/logo.png"
+    },
+    {
+      "name": "NobleSwap Token",
+      "symbol": "NOBLE",
+      "address": "0xB6A8f6c2bDF123Fd2801561008fe838Ca60133af",
+      "chainId": 4242,
       "decimals": 18,
       "logoURI": "https://nobleswap.io/logo.png"
     }
