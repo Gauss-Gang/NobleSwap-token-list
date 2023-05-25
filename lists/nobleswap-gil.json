@@ -1,10 +1,10 @@
 {
   "name": "NobleSwap GIL",
-  "timestamp": "2023-05-25T10:38:36.743Z",
+  "timestamp": "2023-05-25T14:53:16.512Z",
   "version": {
     "major": 1,
     "minor": 0,
-    "patch": 30
+    "patch": 31
   },
   "logoURI": "https://nobleswap.io/logo.png",
   "keywords": [
@@ -15,7 +15,7 @@
     {
       "name": "wGANG Token",
       "symbol": "wGANG",
-      "address": "0x624814Bca9A5d5620E350264f839b93f766B60a2",
+      "address": "0x35A04074b062ECfA9DB4070A8f1d5aF35Dcf0699",
       "chainId": 1452,
       "decimals": 18,
       "logoURI": "https://nobleswap.io/logo.png"
@@ -23,7 +23,15 @@
     {
       "name": "NobleSwap Token",
       "symbol": "NOBLE",
-      "address": "0xB6A8f6c2bDF123Fd2801561008fe838Ca60133af",
+      "address": "0xFA4844cc662F4b509BDb752E249F9c729971FA29",
+      "chainId": 1452,
+      "decimals": 18,
+      "logoURI": "https://nobleswap.io/logo.png"
+    },
+    {
+      "name": "NobleBar Token",
+      "symbol": "xNOBLE",
+      "address": "0x128BD023f6F99cB0fD3a061e7541076d4f634b14",
       "chainId": 1452,
       "decimals": 18,
       "logoURI": "https://nobleswap.io/logo.png"
