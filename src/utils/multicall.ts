@@ -26,7 +26,7 @@ const multicallv2 = async <T = any>(
 ): Promise<T> => {
   const { requireSuccess } = options;
   const multi = new ethers.Contract(
-    "0xf0208E0336AAFde95474E1ca5B139874c5c6fD61",
+    "0x542E31739f6602364cc00006eF7aA3fBb316c854",
     MulticalAbi,
     simpleRpcProvider
   ) as MulticallAbiType;
