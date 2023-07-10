@@ -1,10 +1,10 @@
 {
   "name": "NobleSwap GIL",
-  "timestamp": "2023-05-25T14:53:16.512Z",
+  "timestamp": "2023-07-10T08:15:17.698Z",
   "version": {
     "major": 1,
     "minor": 0,
-    "patch": 31
+    "patch": 32
   },
   "logoURI": "https://nobleswap.io/logo.png",
   "keywords": [
@@ -15,7 +15,7 @@
     {
       "name": "wGANG Token",
       "symbol": "wGANG",
-      "address": "0x35A04074b062ECfA9DB4070A8f1d5aF35Dcf0699",
+      "address": "0x624814Bca9A5d5620E350264f839b93f766B60a2",
       "chainId": 1452,
       "decimals": 18,
       "logoURI": "https://nobleswap.io/logo.png"
@@ -23,15 +23,7 @@
     {
       "name": "NobleSwap Token",
       "symbol": "NOBLE",
-      "address": "0xFA4844cc662F4b509BDb752E249F9c729971FA29",
-      "chainId": 1452,
-      "decimals": 18,
-      "logoURI": "https://nobleswap.io/logo.png"
-    },
-    {
-      "name": "NobleBar Token",
-      "symbol": "xNOBLE",
-      "address": "0x128BD023f6F99cB0fD3a061e7541076d4f634b14",
+      "address": "0xC66edF8eCC0Fc72b10cB749146e9de9837C9359E",
       "chainId": 1452,
       "decimals": 18,
       "logoURI": "https://nobleswap.io/logo.png"
@@ -39,7 +31,7 @@
     {
       "name": "Ferret Token",
       "symbol": "FTT",
-      "address": "0x760A8A3b52a28eE55db35cd69F616970863ec2d5",
+      "address": "0x0C9C5Ab0Bd51e703CFC5529A4F88174DD77CE073",
       "chainId": 1452,
       "decimals": 18,
       "logoURI": "https://nobleswap.io/logo.png"
@@ -47,7 +39,7 @@
     {
       "name": "Sloth Token",
       "symbol": "SHT",
-      "address": "0xAa42C73a0ef2ab7115369C0cCa5664Cf77F4b365",
+      "address": "0x8AA6A202E5591d44D7cC5de573565FaBAe18e5C7",
       "chainId": 1452,
       "decimals": 18,
       "logoURI": "https://nobleswap.io/logo.png"
@@ -55,7 +47,7 @@
     {
       "name": "Cat Token",
       "symbol": "CTT",
-      "address": "0xb06E20B0F3aA014F3Bf50cb3FA1e5C15113A30F0",
+      "address": "0xb943A963b98DffBef4A7fEbFEAa271e2E3E58AE2",
       "chainId": 1452,
       "decimals": 18,
       "logoURI": "https://nobleswap.io/logo.png"
@@ -63,7 +55,7 @@
     {
       "name": "Duck Token",
       "symbol": "DKT",
-      "address": "0xFDB28f6C5d8daB66b7fda0D66c09aF24425017Af",
+      "address": "0x4660df28e58625b08184A0AdB03A56bdd6274e77",
       "chainId": 1452,
       "decimals": 18,
       "logoURI": "https://nobleswap.io/logo.png"
@@ -71,7 +63,7 @@
     {
       "name": "Dog Token",
       "symbol": "DGT",
-      "address": "0x3974a70DB923C995c1F4E0841604856F28B1BeA7",
+      "address": "0xBB9408a0e1D65986D2Aa2bdE370E2bD6aa279fa1",
       "chainId": 1452,
       "decimals": 18,
       "logoURI": "https://nobleswap.io/logo.png"
