@@ -1,0 +1,40 @@
+{
+  "name": "NobleSwap GIL",
+  "timestamp": "2023-07-10T08:15:17.698Z",
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 1
+  },
+  "logoURI": "https://nobleswap.io/logo.png",
+  "keywords": [
+    "nobleswap",
+    "gauss"
+  ],
+  "tokens": [
+    {
+      "name": "wGANG Token",
+      "symbol": "wGANG",
+      "address": "0x26497607aAC75F1fFD7372FEDf6dBE5CFD8Ad92b",
+      "chainId": 1777,
+      "decimals": 18,
+      "logoURI": "https://gaussgang.com/downloads/GANG-logo.png"
+    },
+    {
+      "name": "INK Token",
+      "symbol": "INK",
+      "address": "0xe5e6dFe69aE1d74d506859E052ed7e1b5DbB9d38",
+      "chainId": 1777,
+      "decimals": 18,
+      "logoURI": "https://1151056837-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FyXM6bEIC9hOjfFsdiXGc%2Fuploads%2FNLvDwmGAQQwSOu1XPxIY%2FINK%20Logo%20Icon.png?alt=media&token=7290ae68-ef30-44e4-8bd9-16118e687cd8"
+    },
+    {
+      "name": "PAPER Token",
+      "symbol": "PAPER",
+      "address": "0x18f0Cf904adaeaC2e6bfE573d61f51D4699De72d",
+      "chainId": 1777,
+      "decimals": 18,
+      "logoURI": "https://1151056837-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FyXM6bEIC9hOjfFsdiXGc%2Fuploads%2FW0lv5gFAMcweiFW7enzO%2FPAPER%20Logo%20Icon.png?alt=media&token=757590ba-9edb-4a2e-9fdf-f936ee9f7a25"
+    }
+  ]
+}
