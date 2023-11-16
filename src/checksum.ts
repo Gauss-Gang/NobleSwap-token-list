@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
 import { getAddress } from "@ethersproject/address";
+import nobleswapGAUSS from "./tokens/nobleswap-gauss.json";
 import nobleswapGIL from "./tokens/nobleswap-gil.json";
 import nobleswapGILTop100 from "./tokens/nobleswap-gil-top-100.json";
 import nobleswapGILTop15 from "./tokens/nobleswap-gil-top-15.json";
@@ -8,6 +9,7 @@ import coingecko from "./tokens/coingecko.json";
 import cmc from "./tokens/cmc.json";
 
 const lists = {
+  "nobleswap-gauss": nobleswapGAUSS,
   "nobleswap-gil": nobleswapGIL,
   "nobleswap-gil-top-100": nobleswapGILTop100,
   "nobleswap-gil-top-15": nobleswapGILTop15,

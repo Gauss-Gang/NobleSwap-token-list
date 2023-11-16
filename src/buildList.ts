@@ -1,10 +1,12 @@
 import fs from "fs";
 import path from "path";
+import { version as nobleswapGAUSSVersion } from "../lists/nobleswap-gauss.json";
 import { version as nobleswapGILVersion } from "../lists/nobleswap-gil.json";
 import { version as nobleswapGILTop15Version } from "../lists/nobleswap-gil-top-15.json";
 import { version as nobleswapGILTop100Version } from "../lists/nobleswap-gil-top-100.json";
 import { version as coingeckoVersion } from "../lists/coingecko.json";
 import { version as cmcVersion } from "../lists/cmc.json";
+import nobleswapGAUSS from "./tokens/nobleswap-gauss.json";
 import nobleswapGIL from "./tokens/nobleswap-gil.json";
 import nobleswapGILTop100 from "./tokens/nobleswap-gil-top-100.json";
 import nobleswapGILTop15 from "./tokens/nobleswap-gil-top-15.json";
@@ -24,6 +26,14 @@ type Version = {
 };
 
 const lists = {
+  "nobleswap-gauss": {
+    list: nobleswapGAUSS,
+    name: "NobleSwap Gauss",
+    keywords: ["nobleswap", "gauss"],
+    logoURI: "https://nobleswap.io/logo.png",
+    sort: false,
+    currentVersion: nobleswapGAUSSVersion,
+  },
   "nobleswap-gil": {
     list: nobleswapGIL,
     name: "NobleSwap GIL",

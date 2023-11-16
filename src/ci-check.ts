@@ -1,8 +1,10 @@
+import srcGAUSS from "./tokens/nobleswap-gauss.json";
 import srcGIL from "./tokens/nobleswap-gil.json";
 import srcTop100 from "./tokens/nobleswap-gil-top-100.json";
 import srcTop15 from "./tokens/nobleswap-gil-top-15.json";
 import srcCoingecko from "./tokens/coingecko.json";
 import srcCmc from "./tokens/cmc.json";
+import nobleGaussList from "../lists/nobleswap-gauss.json";
 import nobleGilList from "../lists/nobleswap-gil.json";
 import top15List from "../lists/nobleswap-gil-top-15.json";
 import top100tList from "../lists/nobleswap-gil-top-100.json";
@@ -10,6 +12,11 @@ import coingeckoList from "../lists/coingecko.json";
 import cmcList from "../lists/cmc.json";
 
 const lists = [
+  {
+    name: "nobleswap-gauss",
+    src: srcGAUSS,
+    actual: nobleGaussList,
+  },
   {
     name: "nobleswap-gil",
     src: srcGIL,
