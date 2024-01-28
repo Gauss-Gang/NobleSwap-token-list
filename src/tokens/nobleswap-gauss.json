@@ -2,25 +2,17 @@
     {
         "name": "wGANG Token",
         "symbol": "wGANG",
-        "address": "0x26497607aAC75F1fFD7372FEDf6dBE5CFD8Ad92b",
+        "address": "0xb45fC65405B1a28Bb24AF49fe2caa278525Fe977",
         "chainId": 1777,
         "decimals": 18,
         "logoURI": "https://nobleswap.io/logo.png"
     },
     {
-        "name": "INK Token",
-        "symbol": "INK",
-        "address": "0xe5e6dFe69aE1d74d506859E052ed7e1b5DbB9d38",
+        "name": "Bridged USDC (Gauss)",
+        "symbol": "USDC.pol",
+        "address": "0x2baFd05252ADcA1143b77a88A72E1022B59ad379",
         "chainId": 1777,
-        "decimals": 18,
-        "logoURI": "https://nobleswap.io/logo.png"
-    },
-    {
-        "name": "PAPER Token",
-        "symbol": "PAPER",
-        "address": "0x18f0Cf904adaeaC2e6bfE573d61f51D4699De72d",
-        "chainId": 1777,
-        "decimals": 18,
+        "decimals": 6,
         "logoURI": "https://nobleswap.io/logo.png"
     }
 ]
